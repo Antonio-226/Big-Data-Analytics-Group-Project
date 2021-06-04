@@ -1,9 +1,9 @@
 # Big-Data-Analytics-Group-Project
-Welcome to the repository of group 23 for the course 'Big-Data Analytics' in FS 21.
+Welcome to the repository of group 23 for the course 'Big-Data Analytics' in FS 21. Our team members are: Alexander Wyss, Andrea Meier, Anton Schwarz, Maximilian Weber and Michael Nadig .
 
 
 
-In our project we try to predict te severity of car accidents in the town of Zurich based on weather data. 
+In our project we try to predict the possibility of car accidents in the town of Zurich based on weather data. 
 
 ## Structure of Repository
 In the following you can see the structure of our repository: 
@@ -15,6 +15,8 @@ The data for our work we got from [Open Data Zurich](https://www.stadt-zuerich.c
 * [RoadTrafficAccidentLocations.csv](https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte) which provides the police-registered road traffic accidents with personal injury and property damage in the Zurich city area since 2011. And
 * [messwerte_mythenquai_2007-2020.csv](https://data.stadt-zuerich.ch/dataset/sid_wapo_wetterstationen) which  provides measured values for both current and past weather situations.
 
+## EDA
+After we have gathered our data we had a first look at it to familarize. We wanted to find out about things like what are the max, min and average values of our variables. How many accidents event do we have compared to non-accident events? What are the monthly averages for accident or air temperature? How are our accidents distributed during the day? etc. All the plots can be found in the [EDA notebook](https://github.com/Antonio-226/Big-Data-Analytics-Group-Project/blob/main/EDA.ipynb).
 ## Data Processing
 In a first step we needed to prepare the two datasets for the later join. This included deriving the date from weekday, month and year information in the accidents datasets and accumulating the weatherdata to the same time interval as the accident data. To get a more detailed description and find out more about all preprocessing steps see the files [Preprocessing_Accidents.ipynb](https://github.com/Antonio-226/Big-Data-Analytics-Group-Project/blob/main/Preprocessing_Accidents.ipynb) or [Preprocessing_Weather.ipynb](https://github.com/Antonio-226/Big-Data-Analytics-Group-Project/blob/main/Preprocessing_Weather.ipynb) respectively.
 
