@@ -1,9 +1,0 @@
-OpenRefine changes:
-	- Removed unnecessary columns (3 languages, days, moths, hours, column number, etc.)
-	- Transformed date column ToDate
-	- Removed AccidentUID - Ran Duplicates facet on it --> no duplicates (false 48017)
-	- Removed CantonCode because everything from canton ZH
-	- Removed MuicipalityCode - Always 261
-	- Remove rows after 2019 because weather doesn't have more entries
-	- air_temp to numeric value --> numeric facet --> removed all blank rows
-	- weather values to numeric values
