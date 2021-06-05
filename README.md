@@ -67,7 +67,8 @@ First, we have seen that Spark might not be the right tool to use for such a sma
 
 Second, our models are not of a great use yet. Our assumption that the accidents depend on the weather alone was perhaps a bit naive. For further improving the models we would propose to include further datasets with additional information. One such dataset might be about traffic counts [e.g. Open Data Zurich](V). It might also be worth considering the multiclass classification again, once there is more data.
 
-
+### requirements.txt
+contains all packages used in for the project, except the packages used in the spark notebook for this pyspark, keras & Tensorflow are needed in addition
 
 
 
