@@ -10,7 +10,8 @@ In the following you can see the structure of our repository:
 
 ![RepoStructure](material/RepoStructure.png)
 
-[Here](https://github.com/Antonio-226/Big-Data-Analytics-Group-Project/blob/main/requirements.txt) you can find a list of requirements that are needed to run the project.
+[Here](https://github.com/Antonio-226/Big-Data-Analytics-Group-Project/blob/main/requirements.txt) you can find a list of requirements that are needed to run the project. It contains all packages used in for the project, except the packages used in the spark notebook for this pyspark, keras & Tensorflow are needed in addition
+
 
 ## Data Collection
 The data for our work we got from [Open Data Zurich](https://www.stadt-zuerich.ch/opendata.secure.html). We used two files: 
@@ -53,7 +54,8 @@ In this pipeline we tried out several models for prediction. We also tried sever
     * ~~Neural Network (Prediction of AccidentSeverity)~~
     * ~~Random Forest (Prediction of AccidentType)~~
 
-The bests results we achieved with a Random Forest Algorithm, where we had beed able to predict wheter and accident will happen with an accuracy of __...NUMBER NEEDED HERE...__
+
+Both algorithm turned out to perform about equally well. We reached an accuracy of 75%. Our algrithm performs therefore better than a baseline of random guessing which has an accuracy of about 50%. However we are aware that 75% might not be enough to be used in practice. We include some ideas how one could improve the accuracy further in the conclusion.
 
 ### Spark pipeline
 In this notebook ([Spark.ipynb](https://github.com/Antonio-226/Big-Data-Analytics-Group-Project/blob/main/Spark.ipynb)) we tried to implement as much of te previously described steps into Spark. Originally we planed to try out the streaming module but the set up turned out to be too complicated. Therefore we decided that we will do a proof of concept to show that we understand how to transfer the steps we have been done to Spark. However we noticed that for our project it is more efficient to do the calculations with pandas.
@@ -67,8 +69,6 @@ First, we have seen that Spark might not be the right tool to use for such a sma
 
 Second, our models are not of a great use yet. Our assumption that the accidents depend on the weather alone was perhaps a bit naive. For further improving the models we would propose to include further datasets with additional information. One such dataset might be about traffic counts [e.g. Open Data Zurich](V). It might also be worth considering the multiclass classification again, once there is more data.
 
-### requirements.txt
-contains all packages used in for the project, except the packages used in the spark notebook for this pyspark, keras & Tensorflow are needed in addition
 
 
 
